@@ -5,8 +5,8 @@
 
     <groupId>com.github.Fruffel</groupId>
     <artifactId>zip-maven-plugin</artifactId>
-    <version>master-SNAPSHOT</version>
-    <packaging>1.0.1-fruffel</packaging>
+    <version>1.0.2-fruffel</version>
+    <packaging>maven-plugin</packaging>
 
     <name>Zip Maven Plugin</name>
     <description>Maven plugin for generating ZIP files.</description>
