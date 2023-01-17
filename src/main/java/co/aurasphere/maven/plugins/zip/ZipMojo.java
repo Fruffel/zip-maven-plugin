@@ -110,11 +110,7 @@ public class ZipMojo extends AbstractMojo {
         if (rootName == null || rootName.isBlank()) {
 		    ZipUtil.pack(inputDirectory, artifact, preserveRoot);
         } else {
-		    ZipUtil.pack(inputDirectory, artifact, new NameMapper() {
-                public String map(String name) {
-                    return rootName + "/" + name;
-                }
-            });
+		    ZipUtil.pack(inputDirectory, artifact, name -> rootName + "/" + name);
         }
 
 		// Sets the artifact file inside the project.
